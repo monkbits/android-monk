@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262632"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:text="Login"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.223"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="249dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271"
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintVertical_bias="0.06"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Remember Me"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.58"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
